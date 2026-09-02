@@ -1,0 +1,13 @@
+{
+  "name": "vedicastro-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend API for VedicAstro (Vercel serverless functions). Frontend is static and served from the project root.",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pg": "^8.11.5",
+    "pdfkit": "^0.15.0"
+  }
+}

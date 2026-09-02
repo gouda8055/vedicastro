@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VedicAstro — AI-Powered Vedic Astrology, Made Simple</title>
+<meta name="description" content="Generate your personalised Kundli, ask an AI astrologer plain-language questions, and get daily horoscopes, compatibility matching and remedies rooted in Vedic astrology.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__row">
+    <a href="index.html" class="brand">
+      <svg class="brand__mark" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="none" stroke="#e3ab48" stroke-width="1.2"/><path d="M16 5 L26 16 L16 27 L6 16 Z" fill="none" stroke="#e3ab48" stroke-width="1.2"/><circle cx="16" cy="16" r="2.2" fill="#e3ab48"/></svg>
+      Vedic<span>Astro</span>
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="kundli.html">Kundli</a>
+      <a href="my-kundlis.html" class="nav-my-kundlis" style="display:none;">My Kundlis</a>
+      <a href="horoscope.html">Horoscope</a>
+      <a href="panchang.html">Panchang</a>
+      <a href="matching.html">Matching</a>
+      <a href="assistant.html">AI Assistant</a>
+      <a href="index.html#learn">Learn</a>
+    </div>
+    <div class="nav__cta">
+      <a href="signin.html" class="btn btn--gold btn--sm">Sign In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero wrap">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <span class="eyebrow">AI-Powered Vedic Astrology</span>
+      <h1 class="hero__title">Understand<br>Your <span class="accent">Destiny.</span><br>Empower Your Life.</h1>
+      <p class="hero__lede">Crafted for modern life — get a personalised Kundli, then ask an AI astrologer to explain your career, relationships and future in plain language. No jargon, just clarity.</p>
+      <div class="hero__ctas">
+        <a href="kundli.html" class="btn btn--gold">Create My Kundli</a>
+        <a href="assistant.html" class="hero__play"><i>▶</i> How it works</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><b data-count="10" data-suffix="M+">0</b><span>Charts generated</span></div>
+        <div class="stat"><b data-count="1.2" data-suffix="M+">0</b><span>Happy users</span></div>
+        <div class="stat"><b data-count="50" data-suffix="+">0</b><span>Detailed reports</span></div>
+        <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>AI support</span></div>
+      </div>
+    </div>
+    <div class="hero__art">
+      <svg class="hero-scene" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f9dd9c"/>
+            <stop offset="45%" stop-color="#e3ab48"/>
+            <stop offset="100%" stop-color="#e3ab48" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="reflFade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e3ab48" stop-opacity=".4"/>
+            <stop offset="100%" stop-color="#e3ab48" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="mtnFar" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2a2158"/>
+            <stop offset="100%" stop-color="#181236"/>
+          </linearGradient>
+        </defs>
+        <circle cx="300" cy="365" r="170" fill="url(#sunGlow)" opacity=".5"/>
+        <circle cx="300" cy="365" r="62" fill="url(#sunGlow)"/>
+        <path d="M0,435 L55,385 L125,422 L185,368 L255,412 L320,375 L390,418 L455,378 L535,428 L600,398 L600,600 L0,600 Z" fill="url(#mtnFar)" opacity=".8"/>
+        <path d="M0,475 L75,418 L145,455 L225,405 L300,458 L378,410 L448,462 L518,420 L600,455 L600,600 L0,600 Z" fill="#0d0a22"/>
+        <line x1="0" y1="452" x2="600" y2="452" stroke="#e3ab48" stroke-opacity=".22" stroke-width="1"/>
+        <ellipse cx="300" cy="470" rx="80" ry="20" fill="url(#reflFade)"/>
+      </svg>
+      <div class="zodiac-ring" data-radius="210"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= FEATURES ================= -->
+<section class="features wrap">
+  <div class="section-head reveal">
+    <span class="eyebrow">What you get</span>
+    <h2>Five ways to know yourself better</h2>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card reveal"><i>✦</i><h3>AI Astrology Assistant</h3><p>Ask anything about your chart and get an answer in plain, everyday language.</p></div>
+    <div class="feature-card reveal"><i>◈</i><h3>Detailed Kundli Reports</h3><p>In-depth analysis of your Lagna, houses and planets — easy to understand.</p></div>
+    <div class="feature-card reveal"><i>♡</i><h3>Compatibility Matching</h3><p>Check compatibility for love, marriage and relationships across eight facets.</p></div>
+    <div class="feature-card reveal"><i>☉</i><h3>Daily Horoscope</h3><p>Personalised predictions for love, career, finance and health, every day.</p></div>
+    <div class="feature-card reveal"><i>❋</i><h3>Remedies &amp; Guidance</h3><p>Traditional, practical remedies suited to your chart — for a better life.</p></div>
+  </div>
+</section>
+
+<!-- ================= ANCIENT WISDOM ================= -->
+<section class="wisdom wrap">
+  <div class="wisdom__art reveal">
+    <div class="wisdom__moon"></div>
+    <div class="wisdom__figure">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="var(--line-strong)" stroke-width="1"/>
+        <circle cx="100" cy="45" r="17" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
+        <path d="M100 62 C 68 90, 38 122, 28 168 L172 168 C 162 122, 132 90, 100 62 Z" fill="none" stroke="var(--gold)" stroke-width="1.3"/>
+        <path d="M52 132 C 70 148, 130 148, 148 132" fill="none" stroke="var(--gold)" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+  <div class="wisdom__copy reveal">
+    <span class="eyebrow">Ancient wisdom</span>
+    <h2>Ancient Wisdom. Modern Clarity.</h2>
+    <p>Experience the power of Vedic astrology with AI insights that are accurate, simple and actionable.</p>
+    <div class="wisdom-stats">
+      <div class="stat"><b data-count="10" data-suffix="M+">0</b><span>Charts generated</span></div>
+      <div class="stat"><b data-count="1.2" data-suffix="M+">0</b><span>Happy users</span></div>
+      <div class="stat"><b data-count="50" data-suffix="+">0</b><span>Detailed reports</span></div>
+      <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>AI support</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="steps wrap">
+  <div class="section-head reveal">
+    <span class="eyebrow">Three steps</span>
+    <h2>From birth details to clear answers</h2>
+  </div>
+  <div class="steps-grid">
+    <div class="step-card reveal"><span class="num">01</span><h3>Share your birth details</h3><p>Enter your date, exact time and place of birth — that's all the engine needs.</p></div>
+    <div class="step-card reveal"><span class="num">02</span><h3>Your chart is calculated</h3><p>We compute your Lagna, Rashi, Nakshatra, planets, houses and current Dasha.</p></div>
+    <div class="step-card reveal"><span class="num">03</span><h3>Ask, and understand</h3><p>Chat with the AI about career, marriage, finance or growth — in plain language.</p></div>
+  </div>
+</section>
+
+<!-- ================= LEARN ================= -->
+<section class="learn wrap" id="learn">
+  <div class="section-head reveal">
+    <span class="eyebrow">Learn</span>
+    <h2>New to Vedic astrology?</h2>
+  </div>
+  <div class="learn-grid">
+    <div class="learn-card reveal">
+      <div class="learn-card__art"></div>
+      <div class="learn-card__body">
+        <h3>What is a Kundli?</h3>
+        <p>A quick primer on birth charts, houses and why your exact birth time matters so much.</p>
+        <a href="#">Read the guide →</a>
+      </div>
+    </div>
+    <div class="learn-card reveal">
+      <div class="learn-card__art"></div>
+      <div class="learn-card__body">
+        <h3>Understanding Dashas</h3>
+        <p>What a "planetary period" actually means, and how it shapes different chapters of life.</p>
+        <a href="#">Read the guide →</a>
+      </div>
+    </div>
+    <div class="learn-card reveal">
+      <div class="learn-card__art"></div>
+      <div class="learn-card__body">
+        <h3>Nakshatras, explained</h3>
+        <p>The 27 lunar mansions, and why your Nakshatra says as much as your Moon sign.</p>
+        <a href="#">Read the guide →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band reveal">
+  <span class="eyebrow">Free to begin</span>
+  <h2>Your chart is waiting to be read.</h2>
+  <p>It takes two minutes to generate your Kundli, and the AI is ready with answers the moment it's done.</p>
+  <a href="kundli.html" class="btn btn--gold">Create My Kundli</a>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="brand">
+          <svg class="brand__mark" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="none" stroke="#e3ab48" stroke-width="1.2"/><path d="M16 5 L26 16 L16 27 L6 16 Z" fill="none" stroke="#e3ab48" stroke-width="1.2"/><circle cx="16" cy="16" r="2.2" fill="#e3ab48"/></svg>
+          Vedic<span>Astro</span>
+        </a>
+        <p>AI-powered Vedic astrology, made simple. Kundli, horoscopes, compatibility and remedies — explained in plain language.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul><li><a href="kundli.html">Kundli</a></li><li><a href="horoscope.html">Horoscope</a></li><li><a href="matching.html">Matching</a></li><li><a href="assistant.html">AI Assistant</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="index.html#learn">Learn</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="#">Refund policy</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year></span> VedicAstro. All rights reserved.</span>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X">X</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
